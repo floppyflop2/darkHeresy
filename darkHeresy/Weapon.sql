@@ -1,0 +1,4 @@
+﻿CREATE TABLE [dbo].[Weapon]
+(
+	[Id] INT NOT NULL PRIMARY KEY
+)

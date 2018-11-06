@@ -1,0 +1,4 @@
+﻿CREATE TABLE [dbo].[PNJ]
+(
+	[Id] INT NOT NULL PRIMARY KEY
+)
