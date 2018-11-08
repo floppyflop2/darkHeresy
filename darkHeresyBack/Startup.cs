@@ -10,9 +10,15 @@ namespace darkHeresyBack
 {
     public partial class Startup
     {
+        public static void main()
+        {
+                    
+        }
+
         public void Configuration(IAppBuilder app)
         {
             ConfigureAuth(app);
         }
+
     }
 }

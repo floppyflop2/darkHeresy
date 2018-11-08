@@ -4,12 +4,28 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "darkHeresy", "darkHeresy\darkHeresy.sqlproj", "{DA9DEACD-3FF6-440E-AABC-63E1712CA1C0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8B444910-81B1-4001-8FF4-581F7E4EE1FB} = {8B444910-81B1-4001-8FF4-581F7E4EE1FB}
+		{8A26CD69-1314-4AFF-920F-2C010403BB2F} = {8A26CD69-1314-4AFF-920F-2C010403BB2F}
+		{4BF1606D-F68D-44E3-8E37-CCF1521B9B98} = {4BF1606D-F68D-44E3-8E37-CCF1521B9B98}
+		{2FED4EFD-E3A5-49EE-9127-54F81965AD1A} = {2FED4EFD-E3A5-49EE-9127-54F81965AD1A}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "darkHeresyService", "darkHeresyBack\darkHeresyService.csproj", "{8B444910-81B1-4001-8FF4-581F7E4EE1FB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "darkHeresyBiz", "darkHeresyBiz\darkHeresyBiz.csproj", "{2FED4EFD-E3A5-49EE-9127-54F81965AD1A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8A26CD69-1314-4AFF-920F-2C010403BB2F} = {8A26CD69-1314-4AFF-920F-2C010403BB2F}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "darkHeresyModel", "darkHeresyModel\darkHeresyModel.csproj", "{8A26CD69-1314-4AFF-920F-2C010403BB2F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Operation", "Operation\Operation.csproj", "{4BF1606D-F68D-44E3-8E37-CCF1521B9B98}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8A26CD69-1314-4AFF-920F-2C010403BB2F} = {8A26CD69-1314-4AFF-920F-2C010403BB2F}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataDarkHeresy", "DataDarkHeresy\DataDarkHeresy.csproj", "{A662BE6D-2497-43DA-9114-5C1C048E9080}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,7 +35,6 @@ Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{DA9DEACD-3FF6-440E-AABC-63E1712CA1C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{DA9DEACD-3FF6-440E-AABC-63E1712CA1C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DA9DEACD-3FF6-440E-AABC-63E1712CA1C0}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
 		{DA9DEACD-3FF6-440E-AABC-63E1712CA1C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DA9DEACD-3FF6-440E-AABC-63E1712CA1C0}.Release|Any CPU.Build.0 = Release|Any CPU
 		{DA9DEACD-3FF6-440E-AABC-63E1712CA1C0}.Release|Any CPU.Deploy.0 = Release|Any CPU
@@ -35,6 +50,14 @@ Global
 		{8A26CD69-1314-4AFF-920F-2C010403BB2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8A26CD69-1314-4AFF-920F-2C010403BB2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8A26CD69-1314-4AFF-920F-2C010403BB2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BF1606D-F68D-44E3-8E37-CCF1521B9B98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BF1606D-F68D-44E3-8E37-CCF1521B9B98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BF1606D-F68D-44E3-8E37-CCF1521B9B98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BF1606D-F68D-44E3-8E37-CCF1521B9B98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A662BE6D-2497-43DA-9114-5C1C048E9080}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A662BE6D-2497-43DA-9114-5C1C048E9080}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A662BE6D-2497-43DA-9114-5C1C048E9080}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A662BE6D-2497-43DA-9114-5C1C048E9080}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
