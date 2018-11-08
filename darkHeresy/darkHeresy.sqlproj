@@ -18,7 +18,7 @@
     <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
     <DeployToDatabase>True</DeployToDatabase>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
-    <TargetLanguage>CS</TargetLanguage>
+    <TargetLanguage>VB</TargetLanguage>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <SqlServerVerification>False</SqlServerVerification>
     <IncludeCompositeObjects>True</IncludeCompositeObjects>
@@ -85,6 +85,7 @@
     <EnableFullTextSearch>True</EnableFullTextSearch>
     <DefaultFilegroup>PRIMARY</DefaultFilegroup>
     <CreateProjectFromDatabaseCompleted>True</CreateProjectFromDatabaseCompleted>
+    <PermissionSet>SAFE</PermissionSet>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <OutputPath>bin\Release\</OutputPath>
@@ -128,5 +129,14 @@
     <Build Include="World.sql" />
     <Build Include="PlayerClass.sql" />
     <Build Include="PersonalInfo.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\darkHeresyModel\darkHeresyModel.csproj">
+      <Name>darkHeresyModel</Name>
+      <Project>{8a26cd69-1314-4aff-920f-2c010403bb2f}</Project>
+      <Private>True</Private>
+      <IsModelAware>True</IsModelAware>
+      <GenerateSqlClrDdl>True</GenerateSqlClrDdl>
+    </ProjectReference>
   </ItemGroup>
 </Project>
